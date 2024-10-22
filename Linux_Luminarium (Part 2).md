@@ -138,6 +138,7 @@ Flag: pwn.college{YlKITcmW2SgHBeMwqftQG3sllev.dhTM5QDL5QzM1czW}
 
 ### Executable shell scripts – 
 create a nano file ‘y.sh’. Enter commands as in `x.sh`. Now invoke `chmod a+x ./y.sh`. this will give executable permission to y.sh and now execute `./y.sh` to get the flag.   Flag: pwn.college{01RV53d03ghlbSCgSn4wBTSfBHd.dRzNyUDL5QzM1czW} 
+
 ## Pondering Paths
 ### The PATH variable – 
 invoke `PATH=””` to ensure that `/challenge/run` cant find `rm` command. Now, run `/challenge/run` to get the flag.
