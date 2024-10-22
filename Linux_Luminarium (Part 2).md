@@ -143,7 +143,9 @@ create a nano file ‘y.sh’. Enter commands as in `x.sh`. Now invoke `chmod a+
 ### The PATH variable – 
 invoke `PATH=””` to ensure that `/challenge/run` cant find `rm` command. Now, run `/challenge/run` to get the flag.
 Flag: pwn.college{sOpo8MCG7dkE29-r5zX1HVNWH-S.dZzNwUDL5QzM1czW}
-### Setting path – invoke `PATH=”/challenge/more_commands/”` to set path to the path of `win` command. Now execute `/challenge/run`. This will yield the flag.
+
+### Setting path – 
+invoke `PATH=”/challenge/more_commands/”` to set path to the path of `win` command. Now execute `/challenge/run`. This will yield the flag.
 Flag: pwn.college{cRMcUsj7PN7x7JNJU5ECXqRi4C-.dVzNyUDL5QzM1czW}
 
 ### Adding Commands – 
