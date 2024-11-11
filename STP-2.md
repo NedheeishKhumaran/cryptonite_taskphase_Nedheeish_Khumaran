@@ -22,6 +22,7 @@ Flag – picoCTF{n0t_mUcH_h4rD3r_tH4n_x0r_3cE2919}
 ### Vault-door-7
 -	The code takes the password and converts them into bytes. The password is 32 bytes. It iterates 8 times when handling 4 bytes each time. (4 bytes make 32 bit, int can hold 32 bit. 8 iteration needed to cover all the 32 bytes). Each of these are pushed left accordingly and bitwise ORed such that they are just joined. This gives a list of 32bit int values. To obtain the password, we can make a code to reverse this. Lets create a function that takes list of integers (our reference list of integers from source goes into this). This function iterates through every integer in the list one by one and creates 4 bytes per iteration. Each of the bytes will be shifting the number by the same exact amount as in the source but to the right instead of left. After that each byte is done bit wise and with 0xFF to make sure there is just last 8 bits considered. Now join the strings together and append it to the new list. 
 Code: 
+```
 def int_array_to_hex_string(int_array):
     hex_chars = []
     
@@ -48,8 +49,7 @@ Flag: picoCTF{A_b1t_0f_b1t_sh1fTiNg_07990cd3b6}
 ### Vault-door-8
 -	The code has a bit swapping algorithm for the password and checks it across the reference. It is a series of swapping. So we need to do the same but in reverse for the reference to get the password. I altered the code accordingly to get the password to print.
 Code: 
-import java.util.*;
-
+// import java.util.*;
 public class VaultDoor8Solver {
     public static void main(String[] args) {
         // Expected scrambled characters
@@ -95,6 +95,7 @@ public class VaultDoor8Solver {
         return result;
     }
 }
+```
 Flag – picoCTF{s0m3_m0r3_b1t_sh1fTiNg_2e762b0ab}
 ## ARM challenges :
 ### ARMssembly 0
