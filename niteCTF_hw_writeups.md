@@ -46,5 +46,32 @@ The input combination to open the lock is 1010101011101010
 
 `Flag: nite{1010101011101010}`
 
+## Mic Mimic
+- The description says that details on the ADC is needed with its datasheet to make the flag. To find the ADC used in Shure Mic ULXD8 X52, we need access to its internal photos. Luckily, according to United States Federal Communications Commission's regulations, any product must submit internal photos and other reports and detais to the agency and it'll be publicly accessible. Initially, we need to search and find FCC id of the product.
+
+`FCC id: DD4ULXD8X52`
+Use the above id on [https://www.fcc.gov/oet/ea/fccid] (search for fcc id search)
+
+<img width="332" alt="image" src="https://github.com/user-attachments/assets/8478cc55-bb21-4b1c-bb33-12cfaf0bba9c" />
+
+<img width="881" alt="image" src="https://github.com/user-attachments/assets/035371cb-f6a3-4967-a205-17bdd6162b1c" />
+
+Enter the details link of the 2024 exhibit. In that open internal photos link.
+
+![image](https://github.com/user-attachments/assets/3c67dd9d-ebec-43ad-bc45-07121f88ef02)
+
+Out of multiple components, search for all of them. The above image has the ADC needed. ADC: PCM 1803A 
+Search for data sheet of the ADC.
+
+<img width="656" alt="image" src="https://github.com/user-attachments/assets/d65d4b47-2630-40f7-8595-fd5e6abbafc3" />
+
+The above image has the details related to mode and format pins. From the description, the ADC works as a master at 512 fs. 
+
+
+
+
+
+
+
 
 
