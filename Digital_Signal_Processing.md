@@ -35,4 +35,36 @@ These can be plotted for visualisation by the help of `matplotlib.pyplot` librar
 This helps in analysing the magnitude of a signal across the frequencies that exist in the signal. With this we can determine the actual signal (that has higher amplitude) and the noise frequencies (that have lower amplitudes).
 Applying fourier transform for a huge signal can be computationally intensive. So we use an algorithm called `Fast Fourier Transform`. 
 Python code: 
+<img width="731" alt="image" src="https://github.com/user-attachments/assets/948dea53-d9d6-408f-81d5-6b40e814bb60" />
+
+The above code uses sine wave for demonstration of FFT. The wave is given a DC offset of 3. Performing fft and taking the amplitudes to plot them. 
+The original signal:
+<img width="660" alt="image" src="https://github.com/user-attachments/assets/4d75a46a-256c-4aef-ac15-570f5c2c369e" />
+
+The plot after fft and neat displaying:
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/8dabf267-92a2-4f92-b0b5-ab1a2840bea5" />
+
+We can see from the above image that the fourier transformation has allowed us to view the amplitude of various frequencies of that signal. This helps in analysis.
+
+## Laplace transform and its inverse
+Laplace transform converts a signal from time domain to s domain (complex frequency domain) which largely helps in processes involving transfer function and frequency response.
+
+Python code : 
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/591aeca0-9e0e-4d37-934c-49cab2ee5d39" />
+The code has a predefined transfer function and input in G and Ui respectively. The product of inputs and transfer function gives us the output function. Inverse laplace every input and output function to convert it to time domain for plotting. The time is taken as an array. The inputs have to summed up and the outputs too for the final functions. Under the for loops, the time of the inputs are substituted to the time in corresponding to the time array. It also sums up the functions. Finally plotting both input and output functions.
+
+![image](https://github.com/user-attachments/assets/6da13151-b3c7-49d4-af12-fbe6cfc703e1)
+
+## Wavelet transform
+The wavelet transform helps in the analysis of change in frequency over time. A small wave-like function (the wavelet) is stretched or compressed to analyze different frequency ranges.
+
+
+
+
+
+
+
+
+
+
 
